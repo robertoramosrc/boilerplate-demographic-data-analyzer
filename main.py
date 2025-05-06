@@ -8,7 +8,6 @@ from unittest import main
 resultado = demographic_data_analyzer.calculate_demographic_data()
 
 df = resultado.get('df')
-print(resultado)
 
 # Run unit tests automatically
-#main(module='test_module', exit=False)
+main(module='test_module', exit=False)
