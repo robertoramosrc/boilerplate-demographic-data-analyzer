@@ -1,3 +1,4 @@
+import pandas as pd
 # This entrypoint file to be used in development. Start by reading README.md
 from itertools import groupby
 
@@ -5,9 +6,7 @@ import demographic_data_analyzer
 from unittest import main
 
 # Test your function by calling it here
-resultado = demographic_data_analyzer.calculate_demographic_data()
-
-df = resultado.get('df')
+resultado = demographic_data_analyzer.calculate_demographic_data(False)
 
 # Run unit tests automatically
 main(module='test_module', exit=False)
